@@ -1,340 +1,50 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
-    <!-- Add to homescreen -->
-    <link rel="manifest" href="manifest.json">
-    <!-- Fallback to homescreen for Chrome <39 on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Material Design Lite">
-    <link rel="icon" sizes="192x192" href="../assets/android-desktop.png">
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon" href="../assets/ios-desktop.png">
-    <!-- TODO: Tile icon for Win8 (144x144 + tile color) -->
-    <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> -->
-    <!-- <meta name="msapplication-TileColor" content="#3372DF"> -->
-    <meta name="theme-color" content="#263238">
-    <link rel="shortcut icon" href="../assets/favicon.png">
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-    <!-- Page styles -->
-    <link rel="stylesheet" href="../assets/prism-default.css">
-    <link rel="stylesheet" href="../material.min.css">
-    <link rel="stylesheet" href="../assets/main.css">
-    <!-- Fonts -->
-    <link href='https://font.c2cmalls.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
-    <link href="https://font.c2cmalls.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body class="components">
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-  <script>
-    // if (document.location.hostname !== 'localhost' &&
-    //     document.location.hostname !== '127.0.0.1' &&
-    //     document.location.hostname.search('.corp.') === -1) {
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-25993200-9', 'auto');
-      // If a specific component page is loaded directly we'll attribute the
-      // page view to the specific component's page
-      if (window.location.pathname.indexOf('/components/') !== -1 &&
-          window.location.hash.indexOf('-section') !== -1) {
-        ga('send', 'pageview', '/components/' +
-            window.location.hash.split('#')[1].split('/')[0]);
-      } else {
-        ga('send', 'pageview');
-      }
-    // }
-    // Setup error tracking before anything else runs.
-  window.onerror = function(message, file, lineNumber, columnNumber, error) {
-    try {
-      if (error !== undefined) {
-        message = error.stack;
-      }
-       ga('send', 'event', 'error', file + ':' + lineNumber, String(message));
-    } catch (e) {
-      // no-op
-    }
-  };
-  </script>
-  <div class="image-preloader"></div>
-  <div class="docs-layout mdl-layout mdl-js-layout">
-    <header class="docs-layout-header mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="docs-layout-title mdl-layout-title"><a href="../">Material<br>Design<br>Lite</a></span>
-      </div>
-      <div class="docs-navigation__container">
-        <nav class="docs-navigation mdl-navigation">
-          <a href="../index.html" class="mdl-navigation__link about">About</a>
-          <a href="../started/index.html" class="mdl-navigation__link started">Getting Started</a>
-          <a href="../templates/index.html" class="mdl-navigation__link templates">Templates</a>
-          <a href="../components/index.html" class="mdl-navigation__link components">Components</a>
-          <a href="../styles/index.html" class="mdl-navigation__link styles">Styles</a>
-          <a href="../customize/index.html" class="mdl-navigation__link customize">Customize</a>
-          <a href="../showcase/index.html" class="mdl-navigation__link showcase">Showcase</a>
-          <a href="../faq/index.html" class="mdl-navigation__link faq">FAQ</a>
-          <div class="spacer"></div>
-          <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons">link</i><span>GitHub</span></a>
-          <a href="../started/index.html#download" class="mdl-navigation__link mdl-navigation__link--icon download">
-            <i class="material-icons">&#xE2C4;</i><span>Download</span>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200">
-              <i class="material-icons">&#xE2C4;</i>
-            </button>
-          </a>
-        </nav>
-      </div>
-      <i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i>
-      <i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i>
-    </header>
-    <main class="docs-layout-content mdl-layout__content mdl-color-text--grey-600">
-      <div class="content mdl-grid mdl-grid--no-spacing" id="content">
-        <div class="subpageheader mdl-cell--12-col">Components</div>
-<link href="../assets/components.css" rel="stylesheet">
+<html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> <title>Material Design Lite</title> <!-- Add to homescreen --> <link rel="manifest" href="manifest.json"> <!-- Fallback to homescreen for Chrome <39 on Android --> <meta name="mobile-web-app-capable" content="yes"> <meta name="application-name" content="Material Design Lite"> <link rel="icon" sizes="192x192" href="../assets/android-desktop.png"> <!-- Add to homescreen for Safari on iOS --> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black"> <meta name="apple-mobile-web-app-title" content="Material Design Lite"> <link rel="apple-touch-icon" href="../assets/ios-desktop.png"> <!-- TODO: Tile icon for Win8 (144x144 + tile color) --> <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> --> <!-- <meta name="msapplication-TileColor" content="#3372DF"> --> <meta name="theme-color" content="#263238"> <link rel="shortcut icon" href="../assets/favicon.png"> <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones --> <!-- <link rel="canonical" href="http://www.example.com/"> --> <!-- Page styles --> <link rel="stylesheet" href="../assets/prism-default.css"> <link rel="stylesheet" href="../material.min.css"> <link rel="stylesheet" href="../assets/main.css"> <!-- Fonts --> <link href='https://font.c2cmalls.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'> <link href="https://font.c2cmalls.com/icon?family=Material+Icons" rel="stylesheet"> </head> <body class="components"> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script> // if (document.location.hostname !== 'localhost' && // document.location.hostname !== '127.0.0.1' && // document.location.hostname.search('.corp.') === -1) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-25993200-9', 'auto'); // If a specific component page is loaded directly we'll attribute the // page view to the specific component's page if (window.location.pathname.indexOf('/components/') !== -1 && window.location.hash.indexOf('-section') !== -1) { ga('send', 'pageview', '/components/' + window.location.hash.split('#')[1].split('/')[0]); } else { ga('send', 'pageview'); } // } // Setup error tracking before anything else runs. window.onerror = function(message, file, lineNumber, columnNumber, error) { try { if (error !== undefined) { message = error.stack; } ga('send', 'event', 'error', file + ':' + lineNumber, String(message)); } catch (e) { // no-op } }; </script> <div class="image-preloader"></div> <div class="docs-layout mdl-layout mdl-js-layout"> <header class="docs-layout-header mdl-layout__header"> <div class="mdl-layout__header-row"> <span class="docs-layout-title mdl-layout-title"><a href="../">Material<br>Design<br>Lite</a></span> </div> <div class="docs-navigation__container"> <nav class="docs-navigation mdl-navigation"> <a href="../index.html" class="mdl-navigation__link about">About</a> <a href="../started/index.html" class="mdl-navigation__link started">Getting Started</a> <a href="../templates/index.html" class="mdl-navigation__link templates">Templates</a> <a href="../components/index.html" class="mdl-navigation__link components">Components</a> <a href="../styles/index.html" class="mdl-navigation__link styles">Styles</a> <a href="../customize/index.html" class="mdl-navigation__link customize">Customize</a> <a href="../showcase/index.html" class="mdl-navigation__link showcase">Showcase</a> <a href="../faq/index.html" class="mdl-navigation__link faq">FAQ</a> <div class="spacer"></div> <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons">link</i><span>GitHub</span></a> <a href="../started/index.html#download" class="mdl-navigation__link mdl-navigation__link--icon download"> <i class="material-icons">&#xE2C4;</i><span>Download</span> <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200"> <i class="material-icons">&#xE2C4;</i> </button> </a> </nav> </div> <i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i> <i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i> </header> <main class="docs-layout-content mdl-layout__content mdl-color-text--grey-600"> <div class="content mdl-grid mdl-grid--no-spacing" id="content"> <div class="subpageheader mdl-cell--12-col">Components</div>
+<link rel="stylesheet" href="https://cdn.c2cbc.com/material-design-lite/1.1.3/material.min.css">
 <script src="../assets/snippets.js"></script>
 <script src="../assets/components.js"></script>
 <link rel="stylesheet" href="../components/demos.css">
-<div class="mdl-components mdl-js-components mdl-cell mdl-cell--12-col">
-  <aside class="mdl-components__nav docs-text-styling mdl-shadow--4dp">
-    <a href="#badges-section" class="mdl-components__link mdl-component badges">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_badges.png')">
-      </div>
-      <span class="mdl-components__link-text">Badges</span>
-    </a>
-    <a href="#buttons-section" class="mdl-components__link mdl-component buttons">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_buttons.png')">
-      </div>
-      <span class="mdl-components__link-text">Buttons</span>
-    </a>
-    <a href="#cards-section" class="mdl-components__link mdl-component cards">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_cards.png')">
-      </div>
-      <span class="mdl-components__link-text">Cards</span>
-    </a>
-    <a href="#dialog-section" class="mdl-components__link mdl-component dialog">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_dialog.png')">
-      </div>
-      <span class="mdl-components__link-text">Dialogs</span>
-    </a>
-    <a href="#layout-section" class="mdl-components__link mdl-component layout">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_layout.png')">
-      </div>
-      <span class="mdl-components__link-text">Layout</span>
-    </a>
-    <a href="#lists-section" class="mdl-components__link mdl-component lists">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_lists.png')">
-      </div>
-      <span class="mdl-components__link-text">Lists</span>
-    </a>
-    <a href="#loading-section" class="mdl-components__link mdl-component loading">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_loading.png')">
-      </div>
-      <span class="mdl-components__link-text">Loading</span>
-    </a>
-    <a href="#menus-section" class="mdl-components__link mdl-component menus">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_menus.png')">
-      </div>
-      <span class="mdl-components__link-text">Menus</span>
-    </a>
-    <a href="#sliders-section" class="mdl-components__link mdl-component sliders">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_sliders.png')">
-      </div>
-      <span class="mdl-components__link-text">Sliders</span>
-    </a>
-    <a href="#snackbar-section" class="mdl-components__link mdl-component snackbar">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_snackbar.png')">
-      </div>
-      <span class="mdl-components__link-text">Snackbar</span>
-    </a>
-    <a href="#toggles-section" class="mdl-components__link mdl-component toggles">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_toggles.png')">
-      </div>
-      <span class="mdl-components__link-text">Toggles</span>
-    </a>
-    <a href="#tables-section" class="mdl-components__link mdl-component tables">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_tables.png')">
-      </div>
-      <span class="mdl-components__link-text">Tables</span>
-    </a>
-    <a href="#textfields-section" class="mdl-components__link mdl-component textfields">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_textfields.png')">
-      </div>
-      <span class="mdl-components__link-text">Text Fields</span>
-    </a>
-    <a href="#tooltips-section" class="mdl-components__link mdl-component tooltips">
-      <div class="mdl-components__link-image"
-           style="background-image: url('../assets/comp_tooltips.png')">
-      </div>
-      <span class="mdl-components__link-text">Tooltips</span>
-    </a>
-  </aside>
-  <main class="mdl-components__pages">
-    <section id="index-section" class="mdl-components-index mdl-components__page">
-      <div class="mdl-components-index-text mdl-grid">
-        <div class="mdl-components-text docs-text-styling about-panel about-panel--text mdl-cell mdl-cell--12-col">
-          <dl class="mdl-components-dl">
-            <dt class="mdl-components-dt">COMPONENTS</dt>
-            <dd class="mdl_components-dd">
-        Material Design Lite (MDL) is a library of components for web developers
-        based on Google's Material Design Philosophy: "A visual language for our
-        users that synthesizes the classic principles of good design with the
-        innovation and possibility of technology and science." Understanding the
-        goals and principles of Material Design is critical to the proper use of
-        the Material Design Lite components. If you have not yet read the
-        <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design Introduction</a>
-        you should do so before attempting to use the components.
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="mdl-components-img"></div>
-    </section>
-    <section id="badges-section" class="mdl-components__page mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col">
-        <div class="docs-text-styling component-title">
-          <h3>Badges</h3>
-          <p>Small status descriptors for UI elements.</p>
-        </div>
-          <!-- Add warning, if the component has one -->
-          <!-- Generating snippets -->
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-badge demo-badge__badge-on-icon-text">
-            <style>
-.demo-badge__badge-on-icon-text .mdl-badge {
-  color: rgba(0, 0, 0, 0.24);
+<div class="mdl-components mdl-js-components mdl-cell mdl-cell--12-col"> <aside class="mdl-components__nav docs-text-styling mdl-shadow--4dp"> <a href="#badges-section" class="mdl-components__link mdl-component badges"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_badges.png')"> </div> <span class="mdl-components__link-text">Badges</span> </a> <a href="#buttons-section" class="mdl-components__link mdl-component buttons"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_buttons.png')"> </div> <span class="mdl-components__link-text">Buttons</span> </a> <a href="#cards-section" class="mdl-components__link mdl-component cards"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_cards.png')"> </div> <span class="mdl-components__link-text">Cards</span> </a> <a href="#dialog-section" class="mdl-components__link mdl-component dialog"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_dialog.png')"> </div> <span class="mdl-components__link-text">Dialogs</span> </a> <a href="#layout-section" class="mdl-components__link mdl-component layout"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_layout.png')"> </div> <span class="mdl-components__link-text">Layout</span> </a> <a href="#lists-section" class="mdl-components__link mdl-component lists"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_lists.png')"> </div> <span class="mdl-components__link-text">Lists</span> </a> <a href="#loading-section" class="mdl-components__link mdl-component loading"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_loading.png')"> </div> <span class="mdl-components__link-text">Loading</span> </a> <a href="#menus-section" class="mdl-components__link mdl-component menus"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_menus.png')"> </div> <span class="mdl-components__link-text">Menus</span> </a> <a href="#sliders-section" class="mdl-components__link mdl-component sliders"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_sliders.png')"> </div> <span class="mdl-components__link-text">Sliders</span> </a> <a href="#snackbar-section" class="mdl-components__link mdl-component snackbar"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_snackbar.png')"> </div> <span class="mdl-components__link-text">Snackbar</span> </a> <a href="#toggles-section" class="mdl-components__link mdl-component toggles"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_toggles.png')"> </div> <span class="mdl-components__link-text">Toggles</span> </a> <a href="#tables-section" class="mdl-components__link mdl-component tables"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_tables.png')"> </div> <span class="mdl-components__link-text">Tables</span> </a> <a href="#textfields-section" class="mdl-components__link mdl-component textfields"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_textfields.png')"> </div> <span class="mdl-components__link-text">Text Fields</span> </a> <a href="#tooltips-section" class="mdl-components__link mdl-component tooltips"> <div class="mdl-components__link-image" style="background-image: url('../assets/comp_tooltips.png')"> </div> <span class="mdl-components__link-text">Tooltips</span> </a> </aside> <main class="mdl-components__pages"> <section id="index-section" class="mdl-components-index mdl-components__page"> <div class="mdl-components-index-text mdl-grid"> <div class="mdl-components-text docs-text-styling about-panel about-panel--text mdl-cell mdl-cell--12-col"> <dl class="mdl-components-dl"> <dt class="mdl-components-dt">COMPONENTS</dt> <dd class="mdl_components-dd"> Material Design Lite (MDL) is a library of components for web developers based on Google's Material Design Philosophy: "A visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science." Understanding the goals and principles of Material Design is critical to the proper use of the Material Design Lite components. If you have not yet read the <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design Introduction</a> you should do so before attempting to use the components. </dd> </dl> </div> </div> <div class="mdl-components-img"></div> </section> <section id="badges-section" class="mdl-components__page mdl-grid"> <div class="mdl-cell mdl-cell--12-col"> <div class="docs-text-styling component-title"> <h3>Badges</h3> <p>Small status descriptors for UI elements.</p> </div> <!-- Add warning, if the component has one --> <!-- Generating snippets -->
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-badge demo-badge__badge-on-icon-text"> <style>
+.demo-badge__badge-on-icon-text .mdl-badge { color: rgba(0, 0, 0, 0.24);
 }
-.demo-badge__badge-on-icon-text .mdl-badge.material-icons {
-  font-size: 32px;
+.demo-badge__badge-on-icon-text .mdl-badge.material-icons { font-size: 32px;
 }
 </style>
 <!-- Number badge on icon -->
-<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">account_box</div>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-badge demo-badge__badge-on-icon-icon">
-            <style>
-.demo-badge__badge-on-icon-icon .mdl-badge {
-  color: rgba(0, 0, 0, 0.24);
+<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="1">account_box</div> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-badge demo-badge__badge-on-icon-icon"> <style>
+.demo-badge__badge-on-icon-icon .mdl-badge { color: rgba(0, 0, 0, 0.24);
 }
-.demo-badge__badge-on-icon-icon .mdl-badge.material-icons {
-  font-size: 32px;
+.demo-badge__badge-on-icon-icon .mdl-badge.material-icons { font-size: 32px;
 }
 </style>
-<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥">account_box</div>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Number
-        </div>
-        <div class="snippet-caption">
-          Icon
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="badge/badge-on-icon-text.html">&lt;!-- Number badge on icon --&gt;
+<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥">account_box</div> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Number </div> <div class="snippet-caption"> Icon </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="badge/badge-on-icon-text.html">&lt;!-- Number badge on icon --&gt;
 &lt;div class=&quot;material-icons mdl-badge mdl-badge--overlap&quot; data-badge=&quot;1&quot;&gt;account_box&lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="badge/badge-on-icon-icon.html">&lt;div class=&quot;material-icons mdl-badge mdl-badge--overlap&quot; data-badge=&quot;♥&quot;&gt;account_box&lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-badge demo-badge__badge-on-text-text">
-            <style>
-.demo-badge__badge-on-text-text .mdl-badge {
-  color: rgba(0, 0, 0, 0.24);
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-badge demo-badge__badge-on-text-text"> <style>
+.demo-badge__badge-on-text-text .mdl-badge { color: rgba(0, 0, 0, 0.24);
 }
 </style>
 <!-- Number badge -->
-<span class="mdl-badge" data-badge="4">Inbox</span>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-badge demo-badge__badge-on-text-icon">
-            <style>
-.demo-badge__badge-on-text-icon .mdl-badge {
-  color: rgba(0, 0, 0, 0.24);
+<span class="mdl-badge" data-badge="4">Inbox</span> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-badge demo-badge__badge-on-text-icon"> <style>
+.demo-badge__badge-on-text-icon .mdl-badge { color: rgba(0, 0, 0, 0.24);
 }
 </style>
 <!-- Icon badge -->
-<span class="mdl-badge" data-badge="♥">Mood</span>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Number
-        </div>
-        <div class="snippet-caption">
-          Icon
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="badge/badge-on-text-text.html">&lt;!-- Number badge --&gt;
+<span class="mdl-badge" data-badge="♥">Mood</span> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Number </div> <div class="snippet-caption"> Icon </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="badge/badge-on-text-text.html">&lt;!-- Number badge --&gt;
 &lt;span class=&quot;mdl-badge&quot; data-badge=&quot;4&quot;&gt;Inbox&lt;/span&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="badge/badge-on-text-icon.html">&lt;!-- Icon badge --&gt;
 &lt;span class=&quot;mdl-badge&quot; data-badge=&quot;♥&quot;&gt;Mood&lt;/span&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
-</div>
-          <!-- Adding the demo page -->
-          <style>
-          </style>
-          <script>
-          </script>
-          <div class="docs-text-styling docs-readme">
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
+</div> <!-- Adding the demo page --> <style> </style> <script> </script> <div class="docs-text-styling docs-readme">
 <h2 id="introduction">Introduction</h2>
 <p>The Material Design Lite (MDL) <strong>badge</strong> component is an onscreen notification element. A badge consists of a small circle, typically containing a number or other characters, that appears in proximity to another object. A badge can be both a notifier that there are additional items associated with an object and an indicator of how many items there are.</p>
 <p>You can use a badge to unobtrusively draw the user&#39;s attention to items they might not otherwise notice, or to emphasize that items may need their attention. For example:</p>
@@ -346,7 +56,7 @@ body {
 <p>A badge is almost always positioned near a link so that the user has a convenient way to access the additional information indicated by the badge. However, depending on the intent, the badge itself may or may not be part of the link.</p>
 <p>Badges are a new feature in user interfaces, and provide users with a visual clue to help them discover additional relevant content. Their design and use is therefore an important factor in the overall user experience.</p>
 <h3 id="to-include-an-mdl-badge-component-">To include an MDL <strong>badge</strong> component:</h3>
-<p>&nbsp;1. Code  an <code>&lt;a&gt;</code> (anchor/link) or a <code>&lt;span&gt;</code> element. Include any desired attributes and content.</p>
+<p>&nbsp;1. Code an <code>&lt;a&gt;</code> (anchor/link) or a <code>&lt;span&gt;</code> element. Include any desired attributes and content.</p>
 <pre><code class="language-markup">&lt;a href=&quot;#&quot;&gt;This link has a badge.&lt;/a&gt;
 </code></pre>
 <p>&nbsp;2. Add one or more MDL classes, separated by spaces, to the element using the <code>class</code> attribute.</p>
@@ -407,492 +117,147 @@ This badge has no background color.&lt;/a&gt;
 <td>Not a class, but a separate attribute; required on span or link</td>
 </tr>
 </tbody>
-</table>
-          </div>
-      </div>
-    </section>
-    <section id="buttons-section" class="mdl-components__page mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col">
-        <div class="docs-text-styling component-title">
-          <h3>Buttons</h3>
-          <p>Variations on Material Design buttons.</p>
-        </div>
-          <!-- Add warning, if the component has one -->
-          <!-- Generating snippets -->
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-colored">
-            <!-- Colored FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-colored-ripple">
-            <!-- Colored FAB button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Colored FAB
-        </div>
-        <div class="snippet-caption">
-          With ripple
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/fab-colored.html">&lt;!-- Colored FAB button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--colored&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+</table> </div> </div> </section> <section id="buttons-section" class="mdl-components__page mdl-grid"> <div class="mdl-cell mdl-cell--12-col"> <div class="docs-text-styling component-title"> <h3>Buttons</h3> <p>Variations on Material Design buttons.</p> </div> <!-- Add warning, if the component has one --> <!-- Generating snippets -->
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-colored"> <!-- Colored FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-colored-ripple"> <!-- Colored FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Colored FAB </div> <div class="snippet-caption"> With ripple </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/fab-colored.html">&lt;!-- Colored FAB button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--colored&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/fab-colored-ripple.html">&lt;!-- Colored FAB button with ripple --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab">
-            <!-- FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-ripple">
-            <!-- FAB button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-disabled">
-            <!-- Disabled FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Plain FAB
-        </div>
-        <div class="snippet-caption">
-          With ripple
-        </div>
-        <div class="snippet-caption">
-          Disabled
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/fab.html">&lt;!-- FAB button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab"> <!-- FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-ripple"> <!-- FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-disabled"> <!-- Disabled FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab" disabled> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Plain FAB </div> <div class="snippet-caption"> With ripple </div> <div class="snippet-caption"> Disabled </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/fab.html">&lt;!-- FAB button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/fab-ripple.html">&lt;!-- FAB button with ripple --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/fab-disabled.html">&lt;!-- Disabled FAB button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab&quot; disabled&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab&quot; disabled&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised">
-            <!-- Raised button -->
-<button class="mdl-button mdl-js-button mdl-button--raised">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised-ripple">
-            <!-- Raised button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised-disabled">
-            <!-- Raised disabled button-->
-<button class="mdl-button mdl-js-button mdl-button--raised" disabled>
-  Button
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Raised Button
-        </div>
-        <div class="snippet-caption">
-          With ripple
-        </div>
-        <div class="snippet-caption">
-          Disabled
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/raised.html">&lt;!-- Raised button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised&quot;&gt;
-  Button
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised"> <!-- Raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised-ripple"> <!-- Raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised-disabled"> <!-- Raised disabled button-->
+<button class="mdl-button mdl-js-button mdl-button--raised" disabled> Button
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Raised Button </div> <div class="snippet-caption"> With ripple </div> <div class="snippet-caption"> Disabled </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/raised.html">&lt;!-- Raised button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/raised-ripple.html">&lt;!-- Raised button with ripple --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect&quot;&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/raised-disabled.html">&lt;!-- Raised disabled button--&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised&quot; disabled&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised&quot; disabled&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised-colored">
-            <!-- Colored raised button -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised-accent">
-            <!-- Accent-colored raised button -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__raised-ripple-accent">
-            <!-- Accent-colored raised button with ripple -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  Button
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Colored button
-        </div>
-        <div class="snippet-caption">
-          Accent colored
-        </div>
-        <div class="snippet-caption">
-          With Ripples
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/raised-colored.html">&lt;!-- Colored raised button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-button--colored&quot;&gt;
-  Button
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised-colored"> <!-- Colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised-accent"> <!-- Accent-colored raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__raised-ripple-accent"> <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"> Button
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Colored button </div> <div class="snippet-caption"> Accent colored </div> <div class="snippet-caption"> With Ripples </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/raised-colored.html">&lt;!-- Colored raised button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-button--colored&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/raised-accent.html">&lt;!-- Accent-colored raised button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-button--accent&quot;&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-button--accent&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/raised-ripple-accent.html">&lt;!-- Accent-colored raised button with ripple --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent&quot;&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__flat">
-            <!-- Flat button -->
-<button class="mdl-button mdl-js-button">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__flat-ripple">
-            <!-- Flat button with ripple -->
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__flat-disabled">
-            <!-- Disabled flat button -->
-<button class="mdl-button mdl-js-button" disabled>
-  Button
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Flat button
-        </div>
-        <div class="snippet-caption">
-          With ripple
-        </div>
-        <div class="snippet-caption">
-          Disabled
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/flat.html">&lt;!-- Flat button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button&quot;&gt;
-  Button
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__flat"> <!-- Flat button -->
+<button class="mdl-button mdl-js-button"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__flat-ripple"> <!-- Flat button with ripple -->
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__flat-disabled"> <!-- Disabled flat button -->
+<button class="mdl-button mdl-js-button" disabled> Button
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Flat button </div> <div class="snippet-caption"> With ripple </div> <div class="snippet-caption"> Disabled </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/flat.html">&lt;!-- Flat button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/flat-ripple.html">&lt;!-- Flat button with ripple --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect&quot;&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-js-ripple-effect&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/flat-disabled.html">&lt;!-- Disabled flat button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button&quot; disabled&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button&quot; disabled&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__flat-primary">
-            <!-- Primary-colored flat button -->
-<button class="mdl-button mdl-js-button mdl-button--primary">
-  Button
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__flat-accent">
-            <!-- Accent-colored flat button -->
-<button class="mdl-button mdl-js-button mdl-button--accent">
-  Button
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Primary colored flat
-        </div>
-        <div class="snippet-caption">
-          Accent colored flat
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/flat-primary.html">&lt;!-- Primary-colored flat button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--primary&quot;&gt;
-  Button
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__flat-primary"> <!-- Primary-colored flat button -->
+<button class="mdl-button mdl-js-button mdl-button--primary"> Button
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__flat-accent"> <!-- Accent-colored flat button -->
+<button class="mdl-button mdl-js-button mdl-button--accent"> Button
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Primary colored flat </div> <div class="snippet-caption"> Accent colored flat </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/flat-primary.html">&lt;!-- Primary-colored flat button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--primary&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/flat-accent.html">&lt;!-- Accent-colored flat button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--accent&quot;&gt;
-  Button
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--accent&quot;&gt; Button
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__icon">
-            <!-- Icon button -->
-<button class="mdl-button mdl-js-button mdl-button--icon">
-  <i class="material-icons">mood</i>
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__icon-colored">
-            <!-- Colored icon button -->
-<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
-  <i class="material-icons">mood</i>
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Icon button
-        </div>
-        <div class="snippet-caption">
-          Colored
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/icon.html">&lt;!-- Icon button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;mood&lt;/i&gt;
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__icon"> <!-- Icon button -->
+<button class="mdl-button mdl-js-button mdl-button--icon"> <i class="material-icons">mood</i>
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__icon-colored"> <!-- Colored icon button -->
+<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored"> <i class="material-icons">mood</i>
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Icon button </div> <div class="snippet-caption"> Colored </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/icon.html">&lt;!-- Icon button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;mood&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/icon-colored.html">&lt;!-- Colored icon button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--icon mdl-button--colored&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;mood&lt;/i&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--icon mdl-button--colored&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;mood&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-mini">
-            <!-- Mini FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-button demo-button__fab-mini-colored">
-            <!-- Colored mini FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Mini FAB
-        </div>
-        <div class="snippet-caption">
-          Colored
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="button/fab-mini.html">&lt;!-- Mini FAB button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-mini"> <!-- Mini FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-button demo-button__fab-mini-colored"> <!-- Colored mini FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored"> <i class="material-icons">add</i>
+</button> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Mini FAB </div> <div class="snippet-caption"> Colored </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="button/fab-mini.html">&lt;!-- Mini FAB button --&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="button/fab-mini-colored.html">&lt;!-- Colored mini FAB button --&gt;
-&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored&quot;&gt;
-  &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+&lt;button class=&quot;mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
 &lt;/button&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
-</div>
-          <!-- Adding the demo page -->
-          <style>
-          </style>
-          <script>
-          </script>
-          <div class="docs-text-styling docs-readme">
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
+</div> <!-- Adding the demo page --> <style> </style> <script> </script> <div class="docs-text-styling docs-readme">
 <h2 id="introduction">Introduction</h2>
 <p>The Material Design Lite (MDL) <strong>button</strong> component is an enhanced version of the standard HTML <code>&lt;button&gt;</code> element. A button consists of text and/or an image that clearly communicates what action will occur when the user clicks or touches it. The MDL button component provides various types of buttons, and allows you to add both display and click effects.</p>
 <p>Buttons are a ubiquitous feature of most user interfaces, regardless of a site&#39;s content or function. Their design and use is therefore an important factor in the overall user experience. See the button component&#39;s <a href="http://www.google.com/design/spec/components/buttons.html">Material Design specifications page</a> for details.</p>
@@ -986,373 +351,122 @@ body {
 <blockquote>
 <p><strong>Note:</strong> Disabled versions of all the available button types are provided, and are invoked with the standard HTML boolean attribute <code>disabled</code>. <code>&lt;button class=&quot;mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect&quot; disabled&gt;Raised Ripples Disabled&lt;/button&gt;</code>. Alternatively, the <code>mdl-button--disabled</code> class can be used to achieve the same result.
 This attribute may be added or removed programmatically via scripting.</p>
-</blockquote>
-          </div>
-      </div>
-    </section>
-    <section id="cards-section" class="mdl-components__page mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col">
-        <div class="docs-text-styling component-title">
-          <h3>Cards</h3>
-          <p>Self-contained pieces of paper with data.</p>
-        </div>
-          <!-- Add warning, if the component has one -->
-          <!-- Generating snippets -->
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-card demo-card__wide">
-            <!-- Wide card with share menu button -->
+</blockquote> </div> </div> </section> <section id="cards-section" class="mdl-components__page mdl-grid"> <div class="mdl-cell mdl-cell--12-col"> <div class="docs-text-styling component-title"> <h3>Cards</h3> <p>Self-contained pieces of paper with data.</p> </div> <!-- Add warning, if the component has one --> <!-- Generating snippets -->
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-card demo-card__wide"> <!-- Wide card with share menu button -->
 <style>
-.demo-card-wide.mdl-card {
-  width: 512px;
+.demo-card-wide.mdl-card { width: 512px;
 }
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../assets/demos/welcome_card.jpg') center / cover;
+.demo-card-wide > .mdl-card__title { color: #fff; height: 176px; background: url('../assets/demos/welcome_card.jpg') center / cover;
 }
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
+.demo-card-wide > .mdl-card__menu { color: #fff;
 }
 </style>
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Welcome</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Wide
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="card/wide.html">&lt;!-- Wide card with share menu button --&gt;
+<div class="demo-card-wide mdl-card mdl-shadow--2dp"> <div class="mdl-card__title"> <h2 class="mdl-card__title-text">Welcome</h2> </div> <div class="mdl-card__supporting-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia... </div> <div class="mdl-card__actions mdl-card--border"> <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> Get Started </a> </div> <div class="mdl-card__menu"> <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"> <i class="material-icons">share</i> </button> </div>
+</div> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Wide </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="card/wide.html">&lt;!-- Wide card with share menu button --&gt;
 &lt;style&gt;
-.demo-card-wide.mdl-card {
-  width: 512px;
+.demo-card-wide.mdl-card { width: 512px;
 }
-.demo-card-wide &gt; .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url(&#39;../assets/demos/welcome_card.jpg&#39;) center / cover;
+.demo-card-wide &gt; .mdl-card__title { color: #fff; height: 176px; background: url(&#39;../assets/demos/welcome_card.jpg&#39;) center / cover;
 }
-.demo-card-wide &gt; .mdl-card__menu {
-  color: #fff;
+.demo-card-wide &gt; .mdl-card__menu { color: #fff;
 }
 &lt;/style&gt;
-&lt;div class=&quot;demo-card-wide mdl-card mdl-shadow--2dp&quot;&gt;
-  &lt;div class=&quot;mdl-card__title&quot;&gt;
-    &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Welcome&lt;/h2&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt;
-    &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt;
-      Get Started
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__menu&quot;&gt;
-    &lt;button class=&quot;mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect&quot;&gt;
-      &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;demo-card-wide mdl-card mdl-shadow--2dp&quot;&gt; &lt;div class=&quot;mdl-card__title&quot;&gt; &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Welcome&lt;/h2&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia... &lt;/div&gt; &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt; &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt; Get Started &lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__menu&quot;&gt; &lt;button class=&quot;mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect&quot;&gt; &lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt; &lt;/button&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-card demo-card__square">
-            <!-- Square card -->
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-card demo-card__square"> <!-- Square card -->
 <style>
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+.demo-card-square.mdl-card { width: 320px; height: 320px;
 }
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background:
-    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+.demo-card-square > .mdl-card__title { color: #fff; background: url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
 }
 </style>
-<div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">Update</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Aenan convallis.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      View Updates
-    </a>
-  </div>
-</div>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Square
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="card/square.html">&lt;!-- Square card --&gt;
+<div class="demo-card-square mdl-card mdl-shadow--2dp"> <div class="mdl-card__title mdl-card--expand"> <h2 class="mdl-card__title-text">Update</h2> </div> <div class="mdl-card__supporting-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis. </div> <div class="mdl-card__actions mdl-card--border"> <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> View Updates </a> </div>
+</div> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Square </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="card/square.html">&lt;!-- Square card --&gt;
 &lt;style&gt;
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 320px;
+.demo-card-square.mdl-card { width: 320px; height: 320px;
 }
-.demo-card-square &gt; .mdl-card__title {
-  color: #fff;
-  background:
-    url(&#39;../assets/demos/dog.png&#39;) bottom right 15% no-repeat #46B6AC;
+.demo-card-square &gt; .mdl-card__title { color: #fff; background: url(&#39;../assets/demos/dog.png&#39;) bottom right 15% no-repeat #46B6AC;
 }
 &lt;/style&gt;
-&lt;div class=&quot;demo-card-square mdl-card mdl-shadow--2dp&quot;&gt;
-  &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt;
-    &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Update&lt;/h2&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Aenan convallis.
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt;
-    &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt;
-      View Updates
-    &lt;/a&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;demo-card-square mdl-card mdl-shadow--2dp&quot;&gt; &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt; &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Update&lt;/h2&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis. &lt;/div&gt; &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt; &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt; View Updates &lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
 </div>
-<div class="snippet-group">
-  <div class="snippet-header">
-    <div class="snippet-demos">
-      <div class="snippet-demo-padding"></div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-card demo-card__image">
-            <!-- Image card -->
+<div class="snippet-group"> <div class="snippet-header"> <div class="snippet-demos"> <div class="snippet-demo-padding"></div> <div class="snippet-demo"> <div class="snippet-demo-container demo-card demo-card__image"> <!-- Image card -->
 <style>
-.demo-card-image.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: url('../assets/demos/image_card.jpg') center / cover;
+.demo-card-image.mdl-card { width: 256px; height: 256px; background: url('../assets/demos/image_card.jpg') center / cover;
 }
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+.demo-card-image > .mdl-card__actions { height: 52px; padding: 16px; background: rgba(0, 0, 0, 0.2);
 }
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+.demo-card-image__filename { color: #fff; font-size: 14px; font-weight: 500;
 }
 </style>
-<div class="demo-card-image mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="demo-card-image__filename">Image.jpg</span>
-  </div>
-</div>
-          </div>
-        </div>
-        <div class="snippet-demo">
-          <div class="snippet-demo-container demo-card demo-card__event">
-            <!-- Event card -->
+<div class="demo-card-image mdl-card mdl-shadow--2dp"> <div class="mdl-card__title mdl-card--expand"></div> <div class="mdl-card__actions"> <span class="demo-card-image__filename">Image.jpg</span> </div>
+</div> </div> </div> <div class="snippet-demo"> <div class="snippet-demo-container demo-card demo-card__event"> <!-- Event card -->
 <style>
-.demo-card-event.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: #3E4EB8;
+.demo-card-event.mdl-card { width: 256px; height: 256px; background: #3E4EB8;
 }
-.demo-card-event > .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2);
+.demo-card-event > .mdl-card__actions { border-color: rgba(255, 255, 255, 0.2);
 }
-.demo-card-event > .mdl-card__title {
-  align-items: flex-start;
+.demo-card-event > .mdl-card__title { align-items: flex-start;
 }
-.demo-card-event > .mdl-card__title > h4 {
-  margin-top: 0;
+.demo-card-event > .mdl-card__title > h4 { margin-top: 0;
 }
-.demo-card-event > .mdl-card__actions {
-  display: flex;
-  box-sizing:border-box;
-  align-items: center;
+.demo-card-event > .mdl-card__actions { display: flex; box-sizing:border-box; align-items: center;
 }
-.demo-card-event > .mdl-card__actions > .material-icons {
-  padding-right: 10px;
+.demo-card-event > .mdl-card__actions > .material-icons { padding-right: 10px;
 }
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
-.demo-card-event > .mdl-card__actions > .mdl-button {
-  color: #fff;
+.demo-card-event > .mdl-card__actions > .mdl-button { color: #fff;
 }
 </style>
-<div class="demo-card-event mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h4>
-      Featured event:<br>
-      May 24, 2016<br>
-      7-11pm
-    </h4>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Add to Calendar
-    </a>
-    <div class="mdl-layout-spacer"></div>
-    <i class="material-icons">event</i>
-  </div>
-</div>
-          </div>
-        </div>
-      <div class="snippet-demo-padding"></div>
-    </div>
-    <div class="snippet-captions">
-      <div class="snippet-caption-padding"></div>
-        <div class="snippet-caption">
-          Image
-        </div>
-        <div class="snippet-caption">
-          Event
-        </div>
-      <div class="snippet-caption-padding"></div>
-    </div>
-  </div>
-  <div class="snippet-code">
-    <pre class="language-markup codepen-button-enabled"><code id="card/image.html">&lt;!-- Image card --&gt;
+<div class="demo-card-event mdl-card mdl-shadow--2dp"> <div class="mdl-card__title mdl-card--expand"> <h4> Featured event:<br> 2016年5月24日<br> 7-11pm </h4> </div> <div class="mdl-card__actions mdl-card--border"> <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> Add to Calendar </a> <div class="mdl-layout-spacer"></div> <i class="material-icons">event</i> </div>
+</div> </div> </div> <div class="snippet-demo-padding"></div> </div> <div class="snippet-captions"> <div class="snippet-caption-padding"></div> <div class="snippet-caption"> Image </div> <div class="snippet-caption"> Event </div> <div class="snippet-caption-padding"></div> </div> </div> <div class="snippet-code"> <pre class="language-markup codepen-button-enabled"><code id="card/image.html">&lt;!-- Image card --&gt;
 &lt;style&gt;
-.demo-card-image.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: url(&#39;../assets/demos/image_card.jpg&#39;) center / cover;
+.demo-card-image.mdl-card { width: 256px; height: 256px; background: url(&#39;../assets/demos/image_card.jpg&#39;) center / cover;
 }
-.demo-card-image &gt; .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+.demo-card-image &gt; .mdl-card__actions { height: 52px; padding: 16px; background: rgba(0, 0, 0, 0.2);
 }
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+.demo-card-image__filename { color: #fff; font-size: 14px; font-weight: 500;
 }
 &lt;/style&gt;
-&lt;div class=&quot;demo-card-image mdl-card mdl-shadow--2dp&quot;&gt;
-  &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions&quot;&gt;
-    &lt;span class=&quot;demo-card-image__filename&quot;&gt;Image.jpg&lt;/span&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;demo-card-image mdl-card mdl-shadow--2dp&quot;&gt; &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt;&lt;/div&gt; &lt;div class=&quot;mdl-card__actions&quot;&gt; &lt;span class=&quot;demo-card-image__filename&quot;&gt;Image.jpg&lt;/span&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><code id="card/event.html">&lt;!-- Event card --&gt;
 &lt;style&gt;
-.demo-card-event.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: #3E4EB8;
+.demo-card-event.mdl-card { width: 256px; height: 256px; background: #3E4EB8;
 }
-.demo-card-event &gt; .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2);
+.demo-card-event &gt; .mdl-card__actions { border-color: rgba(255, 255, 255, 0.2);
 }
-.demo-card-event &gt; .mdl-card__title {
-  align-items: flex-start;
+.demo-card-event &gt; .mdl-card__title { align-items: flex-start;
 }
-.demo-card-event &gt; .mdl-card__title &gt; h4 {
-  margin-top: 0;
+.demo-card-event &gt; .mdl-card__title &gt; h4 { margin-top: 0;
 }
-.demo-card-event &gt; .mdl-card__actions {
-  display: flex;
-  box-sizing:border-box;
-  align-items: center;
+.demo-card-event &gt; .mdl-card__actions { display: flex; box-sizing:border-box; align-items: center;
 }
-.demo-card-event &gt; .mdl-card__actions &gt; .material-icons {
-  padding-right: 10px;
+.demo-card-event &gt; .mdl-card__actions &gt; .material-icons { padding-right: 10px;
 }
 .demo-card-event &gt; .mdl-card__title,
 .demo-card-event &gt; .mdl-card__actions,
-.demo-card-event &gt; .mdl-card__actions &gt; .mdl-button {
-  color: #fff;
+.demo-card-event &gt; .mdl-card__actions &gt; .mdl-button { color: #fff;
 }
 &lt;/style&gt;
-&lt;div class=&quot;demo-card-event mdl-card mdl-shadow--2dp&quot;&gt;
-  &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt;
-    &lt;h4&gt;
-      Featured event:&lt;br&gt;
-      May 24, 2016&lt;br&gt;
-      7-11pm
-    &lt;/h4&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt;
-    &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt;
-      Add to Calendar
-    &lt;/a&gt;
-    &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;/div&gt;
-    &lt;i class=&quot;material-icons&quot;&gt;event&lt;/i&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;demo-card-event mdl-card mdl-shadow--2dp&quot;&gt; &lt;div class=&quot;mdl-card__title mdl-card--expand&quot;&gt; &lt;h4&gt; Featured event:&lt;br&gt; 2016年5月24日&lt;br&gt; 7-11pm &lt;/h4&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__actions mdl-card--border&quot;&gt; &lt;a class=&quot;mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect&quot;&gt; Add to Calendar &lt;/a&gt; &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;/div&gt; &lt;i class=&quot;material-icons&quot;&gt;event&lt;/i&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code><div class="codepen-extra-css">&lt;style&gt;&lt;/style&gt;</div><div class="codepen-extra-css">&lt;style&gt;
-body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+body { padding: 20px; background: #fafafa; position: relative;
 }
-&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre>
-  </div>
-</div>
-          <!-- Adding the demo page -->
-          <style>
-          </style>
-          <script>
-          </script>
-          <div class="docs-text-styling docs-readme">
+&lt;/style&gt;</div><form class="codepen-button" action="https://codepen.io/pen/define" method="POST" target="_blank"></form></pre> </div>
+</div> <!-- Adding the demo page --> <style> </style> <script> </script> <div class="docs-text-styling docs-readme">
 <h2 id="introduction">Introduction</h2>
 <p>The Material Design Lite (MDL) <strong>card</strong> component is a user interface element representing a virtual piece of paper that contains related data &mdash; such as a photo, some text, and a link &mdash; that are all about a single subject.</p>
 <p>Cards are a convenient means of coherently displaying related content that is composed of different types of objects. They are also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length. Cards have a constant width and a variable height, depending on their content.</p>
@@ -1363,88 +477,25 @@ body {
 &lt;/div&gt;
 </code></pre>
 <p>&nbsp;2. Inside the div, code one or more &quot;inner&quot; divs, one for each desired content block. A card containing a title, an image, some text, and an action bar would contain four &quot;inner&quot; divs, all siblings.</p>
-<pre><code class="language-markup">&lt;div&gt;
-  &lt;div&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div&gt;
-  ...
-  &lt;/div&gt;
+<pre><code class="language-markup">&lt;div&gt; &lt;div&gt; ... &lt;/div&gt; &lt;div&gt; ... &lt;/div&gt; &lt;div&gt; ... &lt;/div&gt; &lt;div&gt; ... &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 <p>&nbsp;3. Add one or more MDL classes, separated by spaces, to the &quot;outer&quot; div and the &quot;inner&quot; divs (depending on their intended use) using the <code>class</code> attribute.</p>
-<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt;
-  &lt;div class=&quot;mdl-card__title&quot;&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__media&quot;&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-  ...
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions&quot;&gt;
-  ...
-  &lt;/div&gt;
+<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt; &lt;div class=&quot;mdl-card__title&quot;&gt; ... &lt;/div&gt; &lt;div class=&quot;mdl-card__media&quot;&gt; ... &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; ... &lt;/div&gt; &lt;div class=&quot;mdl-card__actions&quot;&gt; ... &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 <p>&nbsp;4. Add content to each &quot;inner&quot; div, again depending on its intended use, using standard HTML elements and, optionally, additional MDL classes.</p>
-<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt;
-  &lt;div class=&quot;mdl-card__title&quot;&gt;
-    &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;title Text Goes Here&lt;/h2&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__media&quot;&gt;
-    &lt;img src=&quot;photo.jpg&quot; width=&quot;220&quot; height=&quot;140&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;padding:20px;&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-    This text might describe the photo and provide further information, such as where and
-    when it was taken.
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions&quot;&gt;
-    &lt;a href=&quot;(URL or function)&quot;&gt;Related Action&lt;/a&gt;
-  &lt;/div&gt;
+<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt; &lt;div class=&quot;mdl-card__title&quot;&gt; &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;title Text Goes Here&lt;/h2&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__media&quot;&gt; &lt;img src=&quot;photo.jpg&quot; width=&quot;220&quot; height=&quot;140&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;padding:20px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; This text might describe the photo and provide further information, such as where and when it was taken. &lt;/div&gt; &lt;div class=&quot;mdl-card__actions&quot;&gt; &lt;a href=&quot;(URL or function)&quot;&gt;Related Action&lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 <p>The card component is ready for use.</p>
 <h4 id="examples">Examples</h4>
 <p>A card (no shadow) with a title, image, text, and action.</p>
-<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt;
-  &lt;div class=&quot;mdl-card__title&quot;&gt;
-     &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Auckland Sky Tower&lt;br&gt;Auckland, New Zealand&lt;/h2&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__media&quot;&gt;
-    &lt;img src=&quot;skytower.jpg&quot; width=&quot;173&quot; height=&quot;157&quot; border=&quot;0&quot; alt=&quot;&quot;
-     style=&quot;padding:10px;&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-  The Sky Tower is an observation and telecommunications tower located in Auckland,
-  New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-  in the Southern Hemisphere.
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__actions&quot;&gt;
-     &lt;a href=&quot;http://en.wikipedia.org/wiki/Sky_Tower_%28Auckland%29&quot;&gt;Wikipedia entry&lt;/a&gt;
-  &lt;/div&gt;
+<pre><code class="language-markup">&lt;div class=&quot;mdl-card&quot;&gt; &lt;div class=&quot;mdl-card__title&quot;&gt; &lt;h2 class=&quot;mdl-card__title-text&quot;&gt;Auckland Sky Tower&lt;br&gt;Auckland, New Zealand&lt;/h2&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__media&quot;&gt; &lt;img src=&quot;skytower.jpg&quot; width=&quot;173&quot; height=&quot;157&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;padding:10px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; The Sky Tower is an observation and telecommunications tower located in Auckland, New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure in the Southern Hemisphere. &lt;/div&gt; &lt;div class=&quot;mdl-card__actions&quot;&gt; &lt;a href=&quot;http://en.wikipedia.org/wiki/Sky_Tower_%28Auckland%29&quot;&gt;Wikipedia entry&lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 <p>Card (level-3 shadow) with an image, caption, and text:</p>
-<pre><code class="language-markup">&lt;div class=&quot;mdl-card mdl-shadow--4dp&quot;&gt;
-  &lt;div class=&quot;mdl-card__media&quot;&gt;&lt;img src=&quot;skytower.jpg&quot; width=&quot;173&quot; height=&quot;157&quot; border=&quot;0&quot;
-   alt=&quot;&quot; style=&quot;padding:10px;&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-    Auckland Sky Tower, taken March 24th, 2014
-  &lt;/div&gt;
-  &lt;div class=&quot;mdl-card__supporting-text&quot;&gt;
-  The Sky Tower is an observation and telecommunications tower located in Auckland,
-  New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-  in the Southern Hemisphere.
-  &lt;/div&gt;
+<pre><code class="language-markup">&lt;div class=&quot;mdl-card mdl-shadow--4dp&quot;&gt; &lt;div class=&quot;mdl-card__media&quot;&gt;&lt;img src=&quot;skytower.jpg&quot; width=&quot;173&quot; height=&quot;157&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;padding:10px;&quot;&gt; &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; Auckland Sky Tower, taken 3月24日th, 2014 &lt;/div&gt; &lt;div class=&quot;mdl-card__supporting-text&quot;&gt; The Sky Tower is an observation and telecommunications tower located in Auckland, New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure in the Southern Hemisphere. &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 <h2 id="configuration-options">Configuration options</h2>
